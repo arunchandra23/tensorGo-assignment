@@ -1,6 +1,6 @@
 ## tensorGo-assignment
 
-![alt text](relative%20./flowchart.jpeg?raw=true "Flowchart")
+![alt text](./flowchart.jpeg)
 
 
 
