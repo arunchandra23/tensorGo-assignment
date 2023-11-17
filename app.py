@@ -19,6 +19,7 @@ import requests
 
 def generateS2TT(extension,audio_buffer):
     try:
+        print("started S2TT")
         api_endpoint = os.environ.get('S2TT_API')
         files = {'file': (f'file.{extension}', audio_buffer, 'application/octet-stream')}
         headers = {
@@ -73,10 +74,12 @@ def generateT2TT(text,src_lng="eng",tgt_lang="tel"):
 # =============================+SeamlessM4T Utilities end+=========================================
 
 
-storage_context  = StorageContext .from_defaults(persist_dir="./namo_openAi/")
 def ask_question(question:str=""):
+    print("loading index")
+    storage_context  = StorageContext .from_defaults(persist_dir="./namo_openAi/")
     llm = OpenAI(model='gpt-3.5-turbo', temperature=0, max_tokens=256)
     index = load_index_from_storage(storage_context)
+    print("loaded index")
     query_engine=index.as_query_engine(llm=llm)
     response=query_engine.query(question)
     return response.response
@@ -142,6 +145,7 @@ def process_uploaded_file(uploaded_file):
 
     end_result['question_text_eng']=speech_translated_text['text']
     # ask question
+
     answer=ask_question(speech_translated_text['text'])
     print(answer)
     end_result["response_text_eng"]=answer
@@ -165,7 +169,6 @@ def main():
 
 
         if st.button("Submit") and uploaded_file:
-            
             output=process_uploaded_file(uploaded_file)
             st.session_state.past.append(output['question_text_eng'])
             st.session_state.generated.append(output['response_text_native'])
@@ -176,7 +179,7 @@ def main():
                 message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
                 message(st.session_state["generated"][i], key=str(i))
     with col2:
-        pdf_path = "C:\\Users\\ArunChandraBoini\\Downloads\\namo.pdf"
+        pdf_path = "./namo.pdf"
         try:
             # Use Google Docs Viewer for embedding PDF
             displayPDF(pdf_path)

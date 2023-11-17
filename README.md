@@ -35,7 +35,7 @@
 - After you see `INFO:    Started server process`, continue to the next step.
 
 # Step:4 - Running streamlit application
-- In the root folder: `tensorGo-assignment/Whisper-api` activate the environment `seamlessenv`
+- In the root folder: `tensorGo-assignment/` activate the environment `seamlessenv`
 - Run command ```streamlit run app.py```, which opens streamlit at (http://localhost:8501)
 - The streamlit app contains two columns:
     - Right column: contains the pdf file from which you can ask questions
