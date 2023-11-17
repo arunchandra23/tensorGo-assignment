@@ -169,9 +169,10 @@ def main():
 
 
         if st.button("Submit") and uploaded_file:
-            output=process_uploaded_file(uploaded_file)
-            st.session_state.past.append(output['question_text_eng'])
-            st.session_state.generated.append(output['response_text_native'])
+            with st.spinner('Please wait processing input...'):
+                output=process_uploaded_file(uploaded_file)
+                st.session_state.past.append(output['question_text_eng'])
+                st.session_state.generated.append(output['response_text_native'])
 
         if st.session_state['generated']:
 
