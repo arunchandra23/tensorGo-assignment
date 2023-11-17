@@ -5,7 +5,7 @@
 
 
 > [!NOTE]
-> For the performing RAG I'm using a paid subscription of openai, please use it for light testing only.
+> For performing RAG I'm using a paid subscription of openai, please use it for light testing only.
 
 
 ## Instalation
