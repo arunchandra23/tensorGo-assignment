@@ -44,7 +44,7 @@
 - The streamlit app contains two columns:
     - Right column: contains the pdf file from which you can ask questions
     - Left column: Contains the file upload and response section, where the response is in the same language as of audio.
-- Upload an audio file size `less than 5MB` 
+- Upload an audio file size `less than 5MB`, you can record audio [here](https://online-voice-recorder.com/)
 - Click submit and wait for the response.
 
 
@@ -70,3 +70,8 @@
 - Tell me about Narendra modi's childhood?
 - When was Narendra modi made prime minister?
 
+# References
+- (https://github.com/openai/whisper)
+- (https://github.com/facebookresearch/seamless_communication)
+- (https://github.com/huggingface/transformers)
+- (https://huggingface.co/facebook/hf-seamless-m4t-medium)
