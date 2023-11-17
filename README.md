@@ -43,6 +43,25 @@
 - Click submit and wait for the response.
 
 
+## Supported Languages
+
+| Language   |
+|------------|
+| English    |
+| Spanish    |
+| French     |
+| German     |
+| Italian    |
+| Hindi      |
+| Telugu     |
+| Bengali    |
+| Malayalam  |
+| Tamil      |
+| Kannada    |
+| Marathi    |
+| Arabic     |
+
+
 # Example question on the pdf that can be asked in any of the supported languages as mentioned
 - Who is Narendra modi?
 - When was Narendra Modi born?
