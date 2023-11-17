@@ -8,9 +8,9 @@
 > For performing RAG I'm using a paid subscription of openai, please use it for light testing only.
 
 
-## Installation
+# Installation
 
-# Step:1 - Environment setup and requirement installation
+## Step:1 - Environment setup and requirement installation
 - clone the repository git clone ```git clone https://github.com/arunchandra23/tensorGo-assignment.git```
 - Go to root ```cd tensorGo-assignment```
 - Create virtual environments for running `seamlessM4t` and `whisper` and installing requirements
@@ -28,17 +28,17 @@
 > Please try to open `tensorGo-assignment/` and `tensorGo-assignment/Whisper-api` in saperate IDE windows for ease of set-up process.
 
 
-# Step:2 - Running seamlessM4t (API service)
+## Step:2 - Running seamlessM4t (API service)
 - In the root folder: `tensorGo-assignment/` activate the environment `seamlessenv`
 - Run command ```uvicorn seamless_fastapi:app```, takes some time to download and load the model.
 - After you see `INFO:    Started server process`, continue to the next step.
 
-# Step:3 - Running whisper (API service)
+## Step:3 - Running whisper (API service)
 - In the folder: `tensorGo-assignment/Whisper-api` activate the environment `whisperenv`
 - Run command ```uvicorn whisper_fastapi:app --port 8001```, takes some time to download and load the model.
 - After you see `INFO:    Started server process`, continue to the next step.
 
-# Step:4 - Running streamlit application
+## Step:4 - Running streamlit application
 - In the root folder: `tensorGo-assignment/` activate the environment `seamlessenv`
 - Run command ```streamlit run app.py```, which opens streamlit at (http://localhost:8501)
 - The streamlit app contains two columns:
@@ -48,7 +48,7 @@
 - Click submit and wait for the response.
 
 
-## Supported Languages
+# Supported Languages
 
 | Language   |
 |------------|
@@ -59,9 +59,6 @@
 | Italian    |
 | Hindi      |
 | Telugu     |
-| Bengali    |
-| Malayalam  |
-| Tamil      |
 | Kannada    |
 | Marathi    |
 | Arabic     |
