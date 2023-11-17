@@ -1,0 +1,6 @@
+.venv
+__pycache__
+whispenv
+txt
+RAG.ipynb
+seamless.ipynb

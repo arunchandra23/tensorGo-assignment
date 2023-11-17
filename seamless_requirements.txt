@@ -1,0 +1,14 @@
+protobuf
+torchaudio
+git+https://github.com/huggingface/transformers.git 
+sentencepiece
+llama-index==0.9.1
+soundfile
+python-dotenv
+streamlit
+streamlit_chat
+moviepy
+fastapi
+uvicorn
+python-multipart
+moviepy
