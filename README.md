@@ -1,7 +1,7 @@
 ## tensorGo-assignment
 
 > [!NOTE]
-> For the RAG application I'm using a paid subscription of openai, please use it for light testing only.
+> For the performing RAG I'm using a paid subscription of openai, please use it for light testing only.
 
 
 ## Instalation
@@ -14,9 +14,10 @@
         - In the root folder: `tensorGo-assignment/` create a virtual environment using ```python -m venv seamlessenv```
         - Activate the environment ```python seamlessenv/Scripts/activate.bat```
         - Run ```pip install -r seamless_requirements.txt```
+        - Install ffmpeg as shown [here](https://github.com/openai/whisper#setup)
     - For `whisper`
         - In the folder: `tensorGo-assignment/Whisper-api` create a virtual environment using ```python -m venv whisperenv```
-        - Activate the environment ```python Whisper-api/whisperenv/Scripts/activate.bat```
+        - Activate the environment ```whisperenv/Scripts/activate.bat```
         - Run ```pip install -r whisper_requirements.txt```
 
 > [!ADVICE]
