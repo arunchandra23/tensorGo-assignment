@@ -8,7 +8,7 @@
 > For performing RAG I'm using a paid subscription of openai, please use it for light testing only.
 
 
-## Instalation
+## Installation
 
 # Step:1 - Environment setup and requirement installation
 - clone the repository git clone ```git clone https://github.com/arunchandra23/tensorGo-assignment.git```
